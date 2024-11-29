@@ -1,0 +1,151 @@
+:root {
+    --primary-blue: #0d6efd;
+    --secondary-gray: #6c757d;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-bg);
+}
+
+.team-search {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.team-search input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1.5rem;
+}
+
+.team-search button {
+    border-radius: 0 20px 20px 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-blue);
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.team-logo {
+    width: 64px;
+    height: 64px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-blue);
+}
+
+.team-stats {
+    margin-top: 0.5rem;
+}
+
+.team-stats .badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.matchup-table {
+    margin-top: 1.5rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: var(--light-bg);
+    border-bottom: 2px solid #dee2e6;
+    color: var(--secondary-gray);
+    font-weight: 600;
+}
+
+.odds-comparison {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.betting-site-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 600px) {
+    .odds-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-card {
+        padding: 1rem;
+    }
+}
+
+/* Team information display styles */
+.team-stats {
+    display: block !important;
+    margin: 1rem 0;
+    z-index: 1;
+}
+
+.team-stats .badge {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.favorite-button-wrapper {
+    display: block !important;
+    margin: 1rem 0;
+}
+
+.favorite-btn {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    min-width: 150px;
+    margin: 0.5rem 0;
+    z-index: 100;
+}
+
+.favorite-btn i {
+    margin-right: 0.5rem;
+}
+
+.col-md-4.text-md-end {
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 768px) {
+    .team-stats {
+        margin: 0.5rem 0;
+    }
+}
+.footer {
+    font-size: 0.9rem;
+}
+
+.footer h6 {
+    margin-bottom: 0.75rem;
+}
+
+.footer ul li {
+    margin-bottom: 0.25rem;
+}
